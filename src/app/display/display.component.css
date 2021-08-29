@@ -8,10 +8,17 @@
 
 .top{
     background-image: url("../../assets/bg-masthead.jpg");
-    min-height: 600px;
+    min-height: 900px;
 }
 .search{
     height: 80%;
     padding: 20px 300px 0px 300px;
     margin: auto;
+}
+.owner{
+    justify-content: center;
+    margin: 20px;
+}
+.info{
+    margin: 20px;
 }
