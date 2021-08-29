@@ -1,0 +1,17 @@
+
+.head{
+    height: 50px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+}
+
+.top{
+    background-image: url("../../assets/bg-masthead.jpg");
+    min-height: 600px;
+}
+.search{
+    height: 80%;
+    padding: 20px 300px 0px 300px;
+    margin: auto;
+}
