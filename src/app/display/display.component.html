@@ -13,17 +13,20 @@
 
         <div class="row owner">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="label label-default">{{profile.public_repos}} Public Repos</div>
+                    <div class="label label-primary">{{profile.public_gist}} Public Gist</div>
+                    <div class="label label-success">{{profile.followers}} Followers</div>
+                    <div class="label label-info">{{profile.following}} Following</div>
                 </div>
               </div>
         </div>
 
-        <div class="row info">
+        <div class="row info" *ngFor="let repo of repos">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">{{repo.name}}</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="card-link">Card link</a>
