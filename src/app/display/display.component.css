@@ -24,6 +24,9 @@
 .info{
     margin: 10px;
     box-shadow: 2px 2px 5px rgba(22, 21, 21, 0.733);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .infor{
@@ -37,4 +40,12 @@
 .card-img-top{
     border: 1px solid black;
     border-radius: 50%;
+}
+.card-body{
+    vertical-align: baseline;
+}
+.badgediv{
+    display: flex;
+    justify-content: space-between;
+
 }

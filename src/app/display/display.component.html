@@ -10,8 +10,7 @@
             <div class="col">
                 <input class="form-control form-control-lg" id="SearchBox" type="text" [(ngModel)]="username" name="username" (keyup.Enter)="findProfileRepo()" placeholder="Search Here">
             </div>
-            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="Search" type="submit" (onClick)="findProfileRepo()">Search</button></div>
-            </form>
+        </form>
         </div>
 
         <div class="row owner">
@@ -43,8 +42,8 @@
                   <h5 class="card-title">{{repo.name}}</h5>
                   <h6 class="card-subtitle mb-2 text-muted">{{repo.branches}}</h6>
                   <p class="card-text">{{repo.description}}</p>
-                  <a href="{{repo.html_url}}" target="_blank" class="card-link">View on Github</a>
-                    <div class="col-md-3">
+                  <a href="{{repo.html_url}}" target="_blank" class="btn btn-dark">View on Github</a>
+                    <div class="col-md-3 badgediv">
                         <span class="badge ">{{repo.watchers}} Stars </span>
                         <span class="badge ">{{repo.forks}} Forks </span>
                     </div>
