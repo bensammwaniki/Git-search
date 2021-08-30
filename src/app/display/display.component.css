@@ -8,6 +8,8 @@
 
 .top{
     background-image: url("../../assets/bg-masthead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 900px;
 }
 .search{
@@ -20,5 +22,11 @@
     margin: 20px;
 }
 .info{
-    margin: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(22, 21, 21, 0.733);
+
+}
+.infor{
+    display: flex;
+    justify-content: center;
 }

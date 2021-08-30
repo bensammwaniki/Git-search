@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <div>
     <div class="container-fluid top">
         <div class="row head">
@@ -14,25 +15,35 @@
         </div>
 
         <div class="row owner">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 25rem;">
                 <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
                 <div class="card-body">
-                    <span class="badge badge-pill badge-primary">{{profile.public_repos}} Public Repos</span>
-                    <span class="badge badge-pill badge-primary">{{profile.public_gist}} Public Gist</span>
-                    <span class="badge badge-pill badge-primary">{{profile.followers}} Followers</span>
-                    <span class="badge badge-pill badge-primary">{{profile.following}} Following</span>
+                    <span class="badge badge-primary">{{profile.public_repos}} Public Repos</span>
+                    <span class="badge badge-primary">{{profile.public_gist}} Public Gist</span>
+                    <span class="badge badge-primary">{{profile.followers}} Followers</span>
+                    <span class="badge badge-primary">{{profile.following}} Following</span>
                 </div>
+              </div>
+
+              <div class="card" style="width: 25rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong><h6>Username</h6></strong>{{profile.login}}</li>
+                  <li class="list-group-item"><strong><h6>Location</h6></strong>{{profile.location}}</li>
+                  <li class="list-group-item"><strong><h6>Bio</h6></strong>{{profile.bio}}</li>
+                  <li class="list-group-item"><strong><h6>Email</h6></strong>{{profile.email}}</li>
+                  <li class="list-group-item"><strong><h6>Created_at</h6></strong>{{profile.created_at|date}}</li>
+
+                </ul>
               </div>
         </div>
 
-        <div class="row info" *ngFor="let repo of repos">
-            <div class="card" style="width: 18rem;">
+        <div class="row infor" >
+            <div class="card info" *ngFor="let repo of repos" style="width: 20rem;">
                 <div class="card-body">
                   <h5 class="card-title">{{repo.name}}</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                   <p class="card-text">{{repo.description}}</p>
                   <a href="{{repo.html_url}}" target="_blank" class="card-link">View on Github</a>
-                  <a href="#" class="card-link">Another link</a>
                     <div class="col-md-3">
                         <span class="label label-default">{{repo.watchers}} Stars </span>
                         <span class="label label-primary">{{repo.forks}} Forks </span>
