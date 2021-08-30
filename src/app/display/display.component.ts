@@ -32,7 +32,7 @@ export class DisplayComponent implements OnInit {
       this.repos = repos;
     });
   }
-  findProfile() {
+  findProfileRepo() {
     this.service.updateProfile(this.username);
     this.service.getProfileInfo().subscribe(profile => {
       console.log(profile);
@@ -44,10 +44,6 @@ export class DisplayComponent implements OnInit {
     });
   }
   
-
-
-
-
   ngOnInit(): void {
   }
 

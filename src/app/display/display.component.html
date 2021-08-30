@@ -5,20 +5,22 @@
         </div>
 
         <div class="row search">
+            <form action="">
             <div class="col">
-                <input class="form-control form-control-lg" id="SearchBox" type="text" placeholder="Search Here">
+                <input class="form-control form-control-lg" id="SearchBox" type="text" [(ngModel)]="username" name="username" (keyup.Enter)="findProfileRepo()" placeholder="Search Here">
             </div>
-            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="Search" type="submit">Search</button></div>
+            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="Search" type="submit" (onClick)="findProfileRepo()">Search</button></div>
+            </form>
         </div>
 
         <div class="row owner">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
                 <div class="card-body">
-                    <div class="label label-default">{{profile.public_repos}} Public Repos</div>
-                    <div class="label label-primary">{{profile.public_gist}} Public Gist</div>
-                    <div class="label label-success">{{profile.followers}} Followers</div>
-                    <div class="label label-info">{{profile.following}} Following</div>
+                    <span class="badge badge-pill badge-primary">{{profile.public_repos}} Public Repos</span>
+                    <span class="badge badge-pill badge-primary">{{profile.public_gist}} Public Gist</span>
+                    <span class="badge badge-pill badge-primary">{{profile.followers}} Followers</span>
+                    <span class="badge badge-pill badge-primary">{{profile.following}} Following</span>
                 </div>
               </div>
         </div>
