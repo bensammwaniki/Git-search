@@ -11,7 +11,6 @@ export class DisplayServService {
   private clientid = '65493075';
   private clientsecret = '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';
   constructor (private http: HttpClient) { 
-    console.log('ready');
     this.username = 'bensammwaniki';
   }
   getProfileInfo() {

@@ -24,7 +24,6 @@ export class DisplayComponent implements OnInit {
 
   constructor( private service: DisplayServService) { 
     this.service.getProfileInfo().subscribe(profile => {
-      console.log(profile);
       this.profile = profile;
     });
     this.service.getProfileRepo().subscribe(repos => {
@@ -35,7 +34,7 @@ export class DisplayComponent implements OnInit {
   findProfileRepo() {
     this.service.updateProfile(this.username);
     this.service.getProfileInfo().subscribe(profile => {
-      console.log(profile);
+      console.log(profile+"yappy");
       this.profile = profile;
     });
     this.service.getProfileRepo().subscribe(repos => {
