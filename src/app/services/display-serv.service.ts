@@ -21,4 +21,9 @@ export class DisplayServService {
     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
      .pipe(map((res: any) => {return res}));
   }
+  getProfileRepo() {
+    return this.http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
+      .pipe(map((res: any) => {return res}));
+
+  }
 }
