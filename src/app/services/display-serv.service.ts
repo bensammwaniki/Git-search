@@ -18,7 +18,6 @@ export class DisplayServService {
     interface ApiResponse {
       login: string;
     }
-    // tslint:disable-next-line:max-line-length
     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientid + '&client_secret=' + this.clientsecret)
      .pipe(map((res: any) => {return res}));
   }
