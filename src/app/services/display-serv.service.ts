@@ -26,4 +26,8 @@ export class DisplayServService {
       .pipe(map((res: any) => {return res}));
 
   }
+  updateProfile(username: string) {
+    this.username = username;
+  }
+
 }
