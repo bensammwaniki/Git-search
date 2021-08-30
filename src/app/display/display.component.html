@@ -20,18 +20,18 @@
                 <div class="card-body">
                     <span class="badge badge-primary">{{profile.public_repos}} Public Repos</span>
                     <span class="badge badge-primary">{{profile.public_gist}} Public Gist</span>
-                    <span class="badge badge-warning">{{profile.followers}} Followers</span>
+                    <span class="badge ">{{profile.followers}} Followers</span>
                     <span class="badge badge-primary">{{profile.following}} Following</span>
                 </div>
               </div>
 
               <div class="card" style="width: 25rem;">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><strong><h6>Username</h6></strong>{{profile.login}}</li>
-                  <li class="list-group-item"><strong><h6>Location</h6></strong>{{profile.location}}</li>
-                  <li class="list-group-item"><strong><h6>Bio</h6></strong>{{profile.bio}}</li>
-                  <li class="list-group-item"><strong><h6>Email</h6></strong>{{profile.email}}</li>
-                  <li class="list-group-item"><strong><h6>Created_at</h6></strong>{{profile.created_at|date}}</li>
+                  <li class="list-group-item"><strong>Username: </strong>{{profile.login | uppercase }}</li>
+                  <li class="list-group-item"><strong>Location: </strong>{{profile.location | uppercase }}</li>
+                  <li class="list-group-item"><strong>Bio: </strong>{{profile.bio}}</li>
+                  <li class="list-group-item"><strong>Email: </strong>{{profile.email}}</li>
+                  <li class="list-group-item"><strong>Created_at: </strong>{{profile.created_at|date}}</li>
 
                 </ul>
               </div>
@@ -41,12 +41,12 @@
             <div class="card info" *ngFor="let repo of repos" style="width: 20rem;">
                 <div class="card-body">
                   <h5 class="card-title">{{repo.name}}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">{{repo.branches}}</h6>
                   <p class="card-text">{{repo.description}}</p>
                   <a href="{{repo.html_url}}" target="_blank" class="card-link">View on Github</a>
                     <div class="col-md-3">
-                        <span class="label label-default">{{repo.watchers}} Stars </span>
-                        <span class="label label-primary">{{repo.forks}} Forks </span>
+                        <span class="badge ">{{repo.watchers}} Stars </span>
+                        <span class="badge ">{{repo.forks}} Forks </span>
                     </div>
                 </div>
              </div>
