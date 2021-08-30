@@ -1,27 +1,34 @@
 # GitSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+This project was generated with [Git search](https://bensammwaniki.github.io/git-search/) version 11.2.14.
 
-## Development server
+## project description
+This is a website where users may enter a GitHub username into the search input, onkeyup.Enter, and see names and descriptions of that person's public repositories. you can be able to see users personal public data.A person can also look for repositories of that person. This project was generated with Angular CLI 11.2.14 version 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## set up and installatiion
 
-## Code scaffolding
+The website is hosted at Git so incase you need a copy ensure you are in the right folder then type the following
+git clone https://bensammwaniki.github.com/git-search/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Technology Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+HTML
 
-## Running unit tests
+CSS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+BOOTSTRAP
 
-## Running end-to-end tests
+JAVASCRIPT
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+JQUERY
 
-## Further help
+TYPESCRIPT
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+HTTPCLIENT
+
+## Contacts details
+email: bensonmwaniki@student.moringaschool.com
+
+## Preview of the application
+ ![alt text](src/assets/pre.png)
