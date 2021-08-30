@@ -32,7 +32,18 @@ export class DisplayComponent implements OnInit {
       this.repos = repos;
     });
   }
-
+  findProfile() {
+    this.service.updateProfile(this.username);
+    this.service.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
+    this.service.getProfileRepo().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
+  }
+  
 
 
 
