@@ -124,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "git-Search"
+  "defaultProject": "dist/git-Search"
 }
