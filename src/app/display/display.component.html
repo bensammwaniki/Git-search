@@ -8,7 +8,8 @@
         <div class="row search">
             <form action="">
             <div class="col">
-                <input class="form-control form-control-lg" id="SearchBox" type="text" [(ngModel)]="username" name="username" (keyup.Enter)="findProfileRepo()" placeholder="Search Here">
+                <input class="form-control form-control-lg" id="SearchBox" type="text" [(ngModel)]="username" name="username" (keyup.Enter)="findProfileRepo()" placeholder="Search Here click Enter to search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"(click)="findProfileRepo()" >search</button>                  
             </div>
         </form>
         </div>
